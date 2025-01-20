@@ -1,0 +1,30 @@
+/* define a background color variable */
+:root {
+    --main-bg-color: rgb(145, 61, 145);
+    --hover-bg-color: rgb(168, 96, 168);
+    --clear-color: rgba(0, 0, 0, 0)
+}
+
+button {
+    font-family:monospace;
+    color: white;
+    background-color: var(--main-bg-color);
+    border: 2px solid var(--clear-color);
+    border-radius:8px;
+    padding: 10px 20px;
+    display: block;
+    margin: 10px auto;
+}
+
+button:hover {
+    background-color: var(--hover-bg-color);
+    border-color: white;
+}
+
+button:active {
+    background-color: var(--main-bg-color);
+}
+
+body {
+    background: pink;
+}
