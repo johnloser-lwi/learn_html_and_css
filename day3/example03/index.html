@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 03 Gradient</title>
+
+    <style>
+        div {
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .linear {
+            background-image: linear-gradient(120deg, black 35%, red 50%, red 70%, yellow 70%); /* use deg, to left... or percentage */
+        }
+
+        .radial {
+            background-image: radial-gradient(red 20%, transparent), linear-gradient(blue, green); /* can also use at bottom at the beginning */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="linear"></div>
+    <div class="radial"></div>
+</body>
+</html>

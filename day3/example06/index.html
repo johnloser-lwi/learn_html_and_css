@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 06 Pseudo Class</title>
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            margin: 10px;
+            width: 250px;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            background-color: tomato;
+            padding: 1em;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: aqua;
+            color: black;
+            border: 1px solid brown;
+        }
+
+        a:visited {
+            background-color: blueviolet;
+        }
+        
+        a:active {
+            background-color: black;
+        }
+
+        input {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            height: 30px;
+            width: 250px;
+            border-radius: 30px;
+            border: 1px solid grey;
+            font-size: 1.2rem;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid blueviolet;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+        }
+
+        input:valid {
+            border: 2px solid green;
+        }
+
+        input[type="checkbox"]{
+            margin: 5px;
+            padding: 0;
+            border-radius: 0;
+            width: 1rem;
+            height: 1rem;
+        }
+
+        input[type="checkbox"]:checked {
+            outline: 2px solid green;
+        }
+
+        input[type="checkbox"]:checked + span {
+            text-decoration: line-through;
+            color: grey
+        }
+
+
+        li:first-child {
+            border: 2px solid black;
+        }
+
+        li:last-child {
+            border: 2px solid blue;
+        }
+
+        li:nth-child(5) {
+            background-color: orange;
+        }
+
+        li:nth-child(even) {
+            background-color: grey;
+        }
+
+        li:nth-child(odd) {
+            background-color: lightgrey;
+        }
+
+        li:nth-child(6n) {
+            background-color: orange;
+        }
+
+    </style>
+
+</head>
+<body>
+    <a href="#">This is a link</a><br>
+    <input type="email"><br>
+    <input type="number" max="10"><br>
+    <input type="checkbox">
+    <span>Todo-Element</span><br><br>
+
+    <ol>
+        <li>This is a list-item</li>
+        <li>This is a list-item</li>
+        <li>This is a list-item</li>
+        <li>This is a list-item</li>
+        <li>This is a list-item</li>
+        <li>This is a list-item</li>
+        <li>This is a list-item</li>
+        <li>This is a list-item</li>
+        <li>This is a list-item</li>
+        <li>This is a list-item</li>
+        <li>This is a list-item</li>
+        <li>This is a list-item</li>
+    </ol>
+</body>
+</html>

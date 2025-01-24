@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Design</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            padding: 50px;
+        }
+
+        #popup {
+            position: fixed;
+            width: 300px;
+            
+            background-color: white;
+            border-radius: 6px;
+            padding: 1.5em;
+            
+            top: 50%;
+            right: 50%;
+            translate: 50% -50%;
+
+            text-align: center;
+
+            z-index: 6;
+        }
+
+        #popup > button {
+            margin-top: 10px;
+            padding: .6em 2.5em;
+            font: inherit;
+        }
+
+        #overlay {
+            background-color: rgba(0, 0, 0, 0.3);
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 5;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla nobis eum commodi odio quam omnis voluptate alias modi vero assumenda sit suscipit reiciendis praesentium accusantium unde, voluptatem laborum magnam.
+
+    </p>
+
+    <div id="popup">
+        <h2>Accept Cookies</h2>
+        <button>Yes</button>
+        <button>No</button>
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>

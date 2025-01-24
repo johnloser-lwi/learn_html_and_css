@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("../../images/universe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    align-content: center;
+    height: 100%;
+}
+
+.blackhole {
+    background-image: radial-gradient(black, black 40%, white 44%, transparent 50%);
+    width: 500px;
+    height: 500px;
+
+    margin: 0 auto;
+}

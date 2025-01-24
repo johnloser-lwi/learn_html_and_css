@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 09 Pseudo Element</title>
+
+    <style>
+
+        :root {
+            --primary-color: blueviolet;
+        }
+
+        p::first-letter {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        p::first-line {
+            color: grey;
+        }
+
+        input[type="text"]::placeholder {
+            font-weight: bold;
+            color: blueviolet;
+        }
+
+        h1 {
+            position: relative;
+            width: max-content;
+        }
+
+        h1::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0.3rem;
+            background-image: linear-gradient(120deg, var(--primary-color) 20%, red, blue);
+            border-radius: 6px;
+
+            opacity: 0;
+
+            left: 0;
+            bottom: -20%;
+
+            transition: 200ms width ease-in-out, 100ms opacity ease-in-out;
+        }
+
+        h1:hover::before {
+            width: 120%;
+            opacity: 100%;
+        }
+
+        h1::after {
+            content: "";
+        }
+    </style>
+
+</head>
+<body>
+    <input type="text" placeholder="This is a placeholder">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod cum nesciunt iure accusamus tempora ea pariatur beatae odio quibusdam officia iste vel omnis quos illum molestiae, soluta, magnam tempore?</p>
+
+
+    <h1>My Heading</h1>
+</body>
+</html>

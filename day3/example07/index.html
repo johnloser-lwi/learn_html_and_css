@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 07 Transitions</title>
+
+
+    <style>
+        div {
+            height: 200px;
+            width: 300px;
+            background-color: brown;
+            transition: 
+                200ms border-radius, 
+                400ms background-color,
+                600ms width ease-in-out;
+        }
+        div:hover {
+            border-radius: 40px;
+            background-color: chocolate;
+            width: 400px;
+        }
+    </style>
+
+</head>
+<body>
+    <div></div>
+</body>
+</html>
