@@ -1,0 +1,54 @@
+.container {
+    margin: 2rem;
+    border: 8px solid black;
+}
+
+.wrap {
+    display: flex;
+    min-height: 800px;
+    justify-content: center;
+    align-items: center;
+    align-content: center; /* useful when wrap is enabled and control the behavior of wrapped content */
+    flex-wrap: wrap;
+    /* column-gap: 10px;
+    row-gap: 20px; */
+    gap: 20px;
+}
+
+.resize {
+    min-height: 800px;
+    border: 8px solid black;
+    display: flex;
+    gap: 10px;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: #0071FF;
+    font-size: 40pt;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resize .box {
+    flex-grow: 1; /* fill the space as needed*/
+    max-width: 300px;
+    min-width: 100px;
+}
+
+.resize .box.noshrink {
+    flex-shrink: 0; /* controls whether the box will shrink or not */
+    min-width: 100px;
+    flex-grow: 5;
+    /* align-self: center; */
+}
+
+@media(max-width: 800px) {
+    .resize {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}
