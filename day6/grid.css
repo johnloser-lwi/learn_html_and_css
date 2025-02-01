@@ -1,0 +1,45 @@
+.container {
+    min-height: 800px;
+    border: 8px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */ /* use grid-auto-row can make it adapt to extra items automatically */
+    gap: 10px;
+    grid-auto-rows: 1fr;
+    /* grid-auto-flow: column; */ /* which direction will item be added automatically */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0071FF;
+    font-size: 40pt;
+}
+
+.container.complex {
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px;
+}
+
+.container.complex > .box:first-child {
+    grid-row: 1 / 3;
+}
+
+.container.complex > .box:last-child {
+    grid-column: 2 / 4;
+}
+
+.container.template-area {
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px 250px;
+    grid-template-areas: 
+    "box-1 box-2 box-3 box-4"
+    "box-1 box-5 box-5 box-4"
+    "box-6 box-5 box-5 box-7"
+    "box-8 box-8 box-9 box-7";
+}
+
+.container.template-area > .box {
+    border-radius: 10px;
+}
