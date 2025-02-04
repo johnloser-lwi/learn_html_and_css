@@ -279,8 +279,7 @@ footer a:hover {
     }
 
     footer #at-symbol {
-        justify-self: center;
-        align-self: center;
+        display: none;
     }
 
     footer h3 {
