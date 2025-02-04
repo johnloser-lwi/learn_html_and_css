@@ -81,13 +81,13 @@ p {
     border-radius: 50px;
     box-sizing: border-box;
     padding: 0.5em 1.5em;
-    text-decoration: none;
     transition: 0.2s ease background-color;
     cursor: pointer;
 }
 
-.button:visited, .button:focus {
+.button:link, .button:visited, .button:active {
     color: var(--text-color);
+    text-decoration: none;
 }
 
 .button:hover {
