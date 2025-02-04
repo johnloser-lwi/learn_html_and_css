@@ -86,7 +86,7 @@ p {
     cursor: pointer;
 }
 
-.button:visited, .button:active, .button:hover {
+.button:visited, .button:focus {
     color: var(--text-color);
 }
 
