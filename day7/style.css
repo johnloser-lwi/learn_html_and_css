@@ -82,12 +82,12 @@ p {
     box-sizing: border-box;
     padding: 0.5em 1.5em;
     text-decoration: none;
-    transition: 0.2s ease;
+    transition: 0.2s ease background-color;
     cursor: pointer;
 }
 
-.button:visited {
-    color: inherit;
+.button:visited, .button:active, .button:hover {
+    color: var(--text-color);
 }
 
 .button:hover {
